@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo Application</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  </head>
+  <body>
+    <template id="list">
+      <h2>Todo List</h2>
+      <section>
+        <form>
+          <div>
+            <label for="new-item">Add a new item</label>
+            <input type="text" class="new-item-input" id="new-item" autocomplete="off">
+            <button class="new-item-button">Save</button>
+          </div>
+          <div class="js-items"></div>
+        </form>
+      </section>
+      <!-- <aside>
+        <p role="status" class="visually-hidden">You have done <span class="js-status">1 thing</span> today!</p>
+        <div class="js-count" aria-hidden="true">
+          <small>Done list</small>
+          <span>0</span>
+          <small>things today</small>
+        </div>
+      </aside> -->
+    </template>
+    <template id="login">
+      <h2>Sign In</h2>
+      <form>
+        <label for="email">Type Email</label>
+        <input type="email" class="" id="email" name="email">
+        <br>
+        <label for="password">Enter Password</label>
+        <input type="password" class="" id="password" name="password">
+        <br>
+        <button id="sign-in">Sign In</button>
+      </form>
+    </template>
+    <main>
+      <section class="app" id="app">   
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
